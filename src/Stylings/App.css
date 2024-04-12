@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     /* This makes the container take at least the full height of the viewport */
     text-align: center;
