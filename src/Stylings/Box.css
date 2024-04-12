@@ -1,0 +1,41 @@
+.square {
+    /* Other styles remain the same */
+    color: transparent; /* Make the text color transparent */
+    background: linear-gradient(90deg, rgb(176, 243, 241), rgb(255, 207, 223));
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-flex; /* Center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100px; /* Or your preferred size */
+    height: 100px; /* Or your preferred size */
+    font-size: 2em; /* Adjust based on your preference */
+    border: none; /* Example style; adjust as needed */
+    cursor: pointer; /* Suggests the element is clickable */
+  }
+  
+  /* App.css */
+  .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjust the size to fit your design */
+    grid-template-rows: repeat(3, 100px); /* Adjust the size to fit your design */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Add borders between boxes without affecting the outer edges */
+  .boxContainer > button {
+    border-right: 2px solid #cf59e6;
+    border-bottom: 2px solid #cf59e6;
+  }
+  
+  /* Remove the right border for the 3rd, 6th, and 9th boxes (rightmost column) */
+  .boxContainer > button:nth-child(3n) {
+    border-right: none;
+  }
+  
+  /* Remove the bottom border for the last row */
+  .boxContainer > button:nth-child(n+7) {
+    border-bottom: none;
+  }
+  

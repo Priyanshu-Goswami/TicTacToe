@@ -1,0 +1,75 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    overflow-y: none;
+    margin: 0;
+    padding: 0;
+}
+.boxContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    /* Adjust size as needed */
+    grid-gap: 0;
+    /* No gap, as we are manually adding borders */
+    justify-content: center;
+    /* Center the grid horizontally */
+    align-items: center;
+    font-family: "Poppins",
+    /* Center the grid vertically */
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /* This makes the container take at least the full height of the viewport */
+    text-align: center;
+    /* Centers text elements, like your status message and button */
+}
+
+#statusMessage {
+    background-image: linear-gradient(90deg, rgb(176, 243, 241), rgb(255, 207, 223));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2vw;
+    font-family: "Poppins";
+    margin-bottom: 2vw;
+}
+.RestartBtn{
+    margin-top: 2vw;
+    background-image: linear-gradient(90deg, rgb(176, 243, 241), rgb(255, 207, 223));
+    height: 2vw;
+    width: 8vw;
+    border: none;
+    border-radius: 2vw;
+    font-weight:530;
+    font-family: "Poppins",
+}
+
+@media (width <=600px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .RestartBtn{
+        margin-top: 10vw;
+        background-image: linear-gradient(90deg, rgb(176, 243, 241), rgb(255, 207, 223));
+        height: 7vw;
+        width: 18vw;
+        border: none;
+        border-radius: 2vw;
+        font-weight:530;
+        font-family: "Poppins",
+    }
+    #statusMessage {
+        background-image: linear-gradient(90deg, rgb(176, 243, 241), rgb(255, 207, 223));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 6vw;
+        font-family: "Poppins";
+        margin-bottom: 5vw;
+    }
+}
