@@ -53,4 +53,4 @@ This project is inspired by the official React tutorial on creating a Tic Tac To
 
 ---
 
-Feel free to contribute to the project by submitting bug reports, feature requests, or pull requests. Happy gaming! 🎮👾
+Feel free to contribute to the project by submitting bug reports, feature requests, or pull requests.
